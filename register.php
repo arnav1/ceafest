@@ -26,7 +26,7 @@
 	
 	</head>
 	<body>
-		
+	
 		<?php
 			// define variables and set to empty values
 			$fnameErr = $emailErr = $genderRadioErr = $numberErr = $collegeErr = $accommodationRadioErr ="";
@@ -181,6 +181,30 @@
 				</div>
 			</div>
 		</div>
+		
+		<?php
+			$servername = "http://ceaiitm.org/phpmyadmin/";
+			$username = "ceaiitm";
+			$password = "lightmachaa6$";
+			$dbname = "ceaiitm_cae2015";
+
+		// Create connection
+			$conn = mysqli_connect($servername, $username, $password, $dbname);
+		// Check connection
+			if (!$conn) {
+				die("Connection failed: " . mysqli_connect_error());
+			}
+
+			$sql = "INSERT INTO users2015 (fname, lname, email, phone, college, accommodation, gender) VALUES ($fname, $lname, $email, $number, $college, $accommodationRadio, $genderRadio)";
+
+			if (mysqli_query($conn, $sql)) {
+				echo "New record created successfully";
+			} else {
+				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			}
+
+			mysqli_close($conn);
+		?>
 		
 	</body>
 </html>
