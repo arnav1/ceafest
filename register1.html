@@ -16,99 +16,126 @@
 		background-repeat:repeat;
 		background-attachment:fixed;
 		}
-		h1{
-        margin: 30px 0;
-        padding: 0 200px 15px 0;
-        border-bottom: 1px solid #E5E5E5;
-		}
-		.bs-example{
-    	margin: 20px;
-		}
 		</style>
 	
 	</head>
 	<body>
-		<br/><br/><br/><br/>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<form class="form-horizontal" action="registered.php" method="POST">
-						
-						<div class="form-group">
-							<label for="firstname" class="col-sm-2 control-label">First Name:</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" placeholder="Enter First Name"/>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="lastname" class="col-sm-2 control-label">Last Name:</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" placeholder="Enter Last Name"/>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="email" class="col-sm-2 control-label">E-mail:</label>
-							<div class="col-sm-6">
-								<input type="email" class="form-control" placeholder="Enter E-mail"/>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="contact" class="col-sm-2 control-label">Contact number:</label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" placeholder="+919999999999"/>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="college" class="col-sm-2 control-label">Select your college:</label>
-							<div class="col-sm-6">
-								<select class="form-control">
-									<option>IIT Madras</option>
-									<option>IIT Bombay</option>
-									<option>IIT Delhi</option>
-									<option>IIT Kharagpur</option>
-									<option>IIT Kanpur</option>
-								</select>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="accommodation" class="col-sm-2 control-label">Accommodation Needed?</label>
-							<div class="col-sm-6">
-								<label class="radio-inline">
-									<input type="radio" name="accommodationRadio" value="yes"/>Yes
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="accommodationRadio" value="no"/>No
-								</label>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="gender" class="col-sm-2 control-label">Gender:</label>
-							<div class="col-sm-6">
-								<label class="radio-inline">
-									<input type="radio" name="genderRadio" value="male"/>Male
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="genderRadio" value="female"/>Female
-								</label>
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-6">
-								<button type="submit" class="btn btn-success">Submit</button>
-								<button type="reset" class="btn btn-primary">Clear</button>
-							</div>
-						</div>
-						
-					</form>
+
+			<form class="form-horizontal">
+				
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="inputEmail">Email:</label>
+					<div class="col-xs-9">
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					</div>
 				</div>
-			</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="inputPassword">Password:</label>
+					<div class="col-xs-9">
+						<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="confirmPassword">Confirm Password:</label>
+					<div class="col-xs-9">
+						<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="firstName">First Name:</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="firstName" placeholder="First Name">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="lastName">Last Name:</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="lastName" placeholder="Last Name">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+					<div class="col-xs-9">
+						<input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3">Date of Birth:</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option>Date</option>
+						</select>
+					</div>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option>Month</option>
+						</select>
+					</div>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option>Year</option>
+						</select>
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="postalAddress">Address:</label>
+					<div class="col-xs-9">
+						<textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="ZipCode" placeholder="Zip Code">
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<label class="control-label col-xs-3">Gender:</label>
+					<div class="col-xs-2">
+						<label class="radio-inline">
+							<input type="radio" name="genderRadios" value="male"> Male
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label class="radio-inline">
+							<input type="radio" name="genderRadios" value="female"> Female
+						</label>
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						<label class="checkbox-inline">
+							<input type="checkbox" value="news"> Send me latest news and updates.
+						</label>
+					</div>
+				</div>
+        
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						<label class="checkbox-inline">
+							<input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+						</label>
+					</div>
+				</div>
+        <br>
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						<input type="submit" class="btn btn-primary" value="Submit">
+						<input type="reset" class="btn btn-default" value="Reset">
+					</div>
+				</div>
+			</form>
 		</div>
 		
 	</body>
