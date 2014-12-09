@@ -27,6 +27,14 @@
 	</head>
 	<body>
 	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="img/cea_15.png" alt="CEAfest 2015" style="width:304px;height:144px">
+				</div>
+			</div>
+		</div>
+		
 		<?php
 			// define variables and set to empty values
 			$fnameErr = $emailErr = $genderRadioErr = $numberErr = $collegeErr = $accommodationRadioErr ="";
@@ -58,7 +66,7 @@
 				} else {
 					$number = test_input($_POST["number"]);
 				// check if number has only numbers
-					if (!preg_match("/^[0-9]+$/", $number) {
+					if (!preg_match("/^[0-9]+$/", $number)) {
 						$numberErr = "Only numbers allowed"; 
 					}
 				}
@@ -96,7 +104,6 @@
 			}
 		?>
 		
-		<br/><br/><br/><br/>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -183,25 +190,26 @@
 		</div>
 		
 		<?php
-			$servername = "http://ceaiitm.org/phpmyadmin/";
-			$username = "ceaiitm";
-			$password = "lightmachaa6$";
-			$dbname = "ceaiitm_cae2015";
-
 		// Create connection
-			$conn = mysqli_connect($servername, $username, $password, $dbname);
+			$conn = mysqli_connect("localhost", "ceaiitm", "lightmachaa6$", "ceaiitm_cae2015");
 		// Check connection
 			if (!$conn) {
 				die("Connection failed: " . mysqli_connect_error());
 			}
-
-			$sql = "INSERT INTO users2015 (fname, lname, email, phone, college, accommodation, gender) VALUES ($fname, $lname, $email, $number, $college, $accommodationRadio, $genderRadio)";
-
-			if (mysqli_query($conn, $sql)) {
-				echo "New record created successfully";
+			
+			if (!($fname=="" or $email=="" or $number=="" or $genderRadio=="" or $accommodationRadio=="" or $college==""))	{
+				$sql = "INSERT INTO users2015 (fname, lname, email, phone, college, accommodation, gender) 
+				VALUES ('$fname', '$lname', '$email', '$number', '$college', '$accommodationRadio', '$genderRadio')";
+				echo "<span class=\"error\">New record created successfully!</span>";
 			} else {
-				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+				echo "<span class=\"error\">Entry not made, waiting for input.</span>";
 			}
+
+#			if (mysqli_query($conn, $sql)) {
+#				echo "New record created successfully";
+#			} else {
+#				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+#			}
 
 			mysqli_close($conn);
 		?>
