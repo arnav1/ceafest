@@ -1,0 +1,142 @@
+#cea {
+position:absolute;
+top:60px;
+left:360px;
+}
+
+#samsung {
+position:absolute;
+top:230px;
+left:450px;
+}
+
+#google {
+position:absolute;
+top:125px;
+left:1050px;
+}
+
+#fb {
+position:absolute;
+top:295px;
+left:1050px;
+}
+
+#micromax {
+position:absolute;
+top:75px;
+left:60px;
+}
+
+#sony {
+position:absolute;
+top:295px;
+left:100px;
+}
+
+#ultra {
+position:absolute;
+top:525px;
+left:50px;
+}
+
+#bharathi {
+position:absolute;
+top:525px;
+left:250px;
+}
+
+#times {
+position:absolute;
+top:525px;
+left:450px;
+}
+
+#lt {
+position:absolute;
+top:505px;
+left:670px;
+}
+
+#ambuja {
+position:absolute;
+top:515px;
+left:830px;
+}
+
+#microsoft {
+position:absolute;
+top:515px;
+left:970px;
+}
+
+#dell {
+position:absolute;
+top:505px;
+left:1145px;
+}
+
+#t1 {
+font-size:28px;
+font-weight:bold;
+color:#9400D3;
+position:absolute;
+top:80px;
+left:490px;
+}
+
+#t2{
+font-size:35px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:175px;
+left:550px;
+}
+
+#t3{
+font-size:25px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:65px;
+left:1020px;
+}
+
+#t4{
+font-size:25px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:225px;
+left:1020px;
+}
+
+#t5{
+font-size:25px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:45px;
+left:70px;
+}
+
+#t6{
+font-size:25px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:235px;
+left:60px;
+}
+
+#t7{
+font-size:24px;
+font-weight:bold;
+color:#FF0000;
+position:absolute;
+top:465px;
+left:575px;
+}
+
+
