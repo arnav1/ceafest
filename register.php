@@ -15,11 +15,11 @@
 		
 		<style type="text/css">
 		body{
-		background-color:rgb(0,0,0);
-		background-image:url(img/tan_textured_background_seamless.jpg);
+		background-color:#EECD86;
+	<!--	background-image:url(img/tan_textured_background_seamless.jpg);
 		background-position:top left;
 		background-repeat:repeat;
-		background-attachment:fixed;
+		background-attachment:fixed; -->
 		}
 		.error{color: #FF0000;}
 		</style>
