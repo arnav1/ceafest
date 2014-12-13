@@ -1,20 +1,11 @@
 <html>
 <head>
+     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amaranth">
     <title>Homepage
     </title>
     <style>
-        p{
-            font-family:Book Antiqua;
-            text-decoration: underline;
-            font-weight: bolder;
-            margin: 0;
-            text-indent: 25;
-            color: white;
-           padding-bottom: 10;
-        }
-
         body{
-            background-color:#00FF66;
+            background-color:#EECD86;
         }
         #E1 {
             position:absolute;
@@ -22,6 +13,7 @@
             left:628px;
             width:125px;
             height:19px;
+            -ms-transform: skew(60deg,150deg);
             -webkit-transform: skew(60deg,150deg);
             background: brown;
             border-radius: 5px;
@@ -33,6 +25,7 @@
             left:584px;
             width:125px;
             height:19px;
+            -ms-transform: skew(60deg,150deg);
             -webkit-transform: skew(60deg,150deg);
             background: brown;
             border-radius: 5px;
@@ -44,6 +37,7 @@
             left:541px;
             width:124px;
             height:18px;
+            -ms-transform: skew(60deg,150deg);
             -webkit-transform: skew(60deg,150deg);
             background: brown;
             border-radius: 5px;
@@ -55,6 +49,7 @@
             left: 650px;
             width: 33px;
             height: 120px;
+            -ms-transform: skew(0,-30deg);
             -webkit-transform: skew(0,-30deg);
             background: brown;
             border-radius: 5px;
@@ -65,6 +60,7 @@
             left: 650px;
             width: 117px;
             height: 36px;
+            -ms-transform: skew(0,-30deg);
             -webkit-transform: skew(0,-30deg);
             background: brown;
             border-radius: 5px;
@@ -75,6 +71,7 @@
             left: 734px;
             width: 33px;
             height: 110px;
+            -ms-transform: skew(0,-30deg);
             -webkit-transform: skew(0,-30deg);
             background: brown;
             border-radius: 5px;
@@ -90,6 +87,7 @@
             left: 537px;
             width: 100px;
             height: 36px;
+            -ms-transform: skew(0,30deg);
             -webkit-transform: skew(0,30deg);
             background: brown;
             border-radius: 5px;
@@ -100,6 +98,7 @@
             left: 532px;
             width: 30px;
             height: 110px;
+            -ms-transform: skew(0,30deg);
             -webkit-transform: skew(0,30deg);
             background: brown;
             border-radius: 5px;
@@ -110,9 +109,42 @@
             left: 532px;
             width: 105px;
             height: 36px;
+            -ms-transform: skew(0,30deg);
             -webkit-transform: skew(0,30deg);
             background: brown;
             border-radius: 5px;
+        }
+        li {
+            font-weight:bolder;
+            font-size:30px;
+            font-family: 'Amaranth', serif;
+            color: Black;  
+            list-style: none;
+            position: absolute;
+        }
+        #register {
+            top: 158px;
+            left: 860px;
+        }
+        #contact{
+            top: 509px;
+            left: 570px;
+        }
+        #spons{
+            top: 422px;
+            left: 308px;
+        }
+        #events{
+            top: 158px;
+            left: 308px;
+        }
+        #hospi{
+            top: 76px;
+            left: 570px;
+        }
+        #workshops{
+            top: 422px;
+            left: 860px;
         }
     </style>
 </head>
@@ -120,10 +152,8 @@
 <body onload="start()">
     <div id="E">
         <div id="E1">
-            <p> Contact Us</p>
         </div>
         <div id="E2">
-            <p>Events</p>
         </div>
         <div id="E3">
         </div> 
@@ -135,6 +165,7 @@
         </div>
         <div id="A3">
         </div>
+    </div>
     <div id="C">
         <div id="C1">
         </div>
@@ -143,9 +174,29 @@
         <div id="C3">
         </div>
     </div>
-    </a>
+ <!--   <canvas id="myCanvas" width="1366" height="720">
+    </canvas>    -->
+    <ul>
+    <li id="events">EVENTS</li>
+    <li id="contact">CONTACT US</li>
+    <li id="spons">SPONSORS</li>
+    <li id="register">REGISTRATION</li>
+    <li id="hospi">HOSPITALITY</li>
+    <li id="workshops">WORKSHOPS</li>
+    </ul>
+    
 </body>
-        <script>
+    <script>                                                 // For creating circle
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(640,300,150,0,2*Math.PI);
+            ctx.stroke();
+        
+    </script>    
+
+    <script>                                                    //Display and animate Logo
+            
         document.getElementById("A3").style.visibility='hidden';
         document.getElementById("C2").style.visibility='hidden';
         document.getElementById("A2").style.visibility='hidden';
