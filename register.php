@@ -25,7 +25,7 @@
 		</style>
 	
 	</head>
-	<body>
+	<body onload="myFunction">
 	
 		<div class="container">
 			<div class="row">
@@ -141,7 +141,7 @@
 						<div class="form-group">
 							<label for="college" class="col-sm-2 control-label">Select your college:<span class="error">*</span></label>
 							<div class="col-sm-6">
-								<select class="form-control" name="college" value="<?php echo $college;?>">
+								<select class="form-control" name="college" value="<?php echo $college;?>" id="college">
 									<option>A C CLG OF ENGG AND TECH</option>
 									<option>Aalim Muhammed Salegh College of Engineering</option>
 									<option>Acharya Nagarjuna University College of Engg. & Tech.</option>
@@ -233,7 +233,8 @@
 									<option>Vizag Institute of Technology</option>
 									<option>VNR</option>
 									<option>VR Siddhartha Engineering College</option>
-								</select><span class="error"><?php echo $collegeErr;?></span>
+									<option>College not listed</option>
+								</select><!-- <input type="text" id="college" class="form-control" placeholder="Enter college name" name="college" value="<?php #echo $college;?>"/>--><span class="error"><?php echo $collegeErr;?></span>
 							</div>
 						</div>
 						
@@ -300,5 +301,13 @@
 			mysqli_close($conn);
 		?>
 		
+	<!--	<script>
+			function myFunction(){
+				$("input[id=college]").hide();
+				$('#college').live('change', function () {  
+					$(this).next('input[type=text]').toggle((this.value) == "College not listed")
+				});
+			}
+		</script>  -->
 	</body>
 </html>
