@@ -101,12 +101,6 @@ top:1645px;
 left:1070px;
 }
 
-#t1 {
-position:absolute;
-top:60px;
-left:520px;
-}
-
 #t2{
 position:absolute;
 top:220px;
@@ -136,35 +130,5 @@ left:830px;
 #t7{
 top:1365px;
 left:555px;
-}
-
-#t8{
-top:125px;
-left:80px;
-}
-
-#t9{
-top:170px;
-left:80px;
-}
-
-#t10{
-top:215px;
-left:80px;
-}
-
-#t11{
-top:125px;
-left:1045px;
-}
-
-#t12{
-top:170px;
-left:1045px;
-}
-
-#t13{
-top:215px;
-left:1045px;
 }
 
