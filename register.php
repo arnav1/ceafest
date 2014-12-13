@@ -66,7 +66,7 @@
 				} else {
 					$number = test_input($_POST["number"]);
 				// check if number has only numbers
-					if (!preg_match("/^[0-9]+$/", $number)) {
+					if (!preg_match("/^[0-9+]+$/", $number)) {
 						$numberErr = "Only numbers allowed"; 
 					}
 				}
@@ -177,8 +177,8 @@
 									<option>GOVT CLG OF ENGG</option>
 									<option>Gurunank </option>
 									<option>Hindustan College of Engineering</option>
-									<option>IIT Madras</option>
 									<option>IIT Hyderabad</option>
+									<option>IIT Madras</option>
 									<option>JERUSALEM CLG OF ENGG</option>
 									<option>JNTU</option>
 									<option>JNTU COLLEGE OF ENGINEERING</option>
