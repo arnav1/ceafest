@@ -22,6 +22,10 @@
 		background-attachment:fixed; -->
 		}
 		.error{color: #FF0000;}
+		.error1{
+			color: #FF0000;
+			font-size: 20px;
+		}
 		</style>
 	
 	</head>
@@ -141,7 +145,7 @@
 						<div class="form-group">
 							<label for="college" class="col-sm-2 control-label">Select your college:<span class="error">*</span></label>
 							<div class="col-sm-6">
-								<select class="form-control" name="college" value="<?php echo $college;?>" id="college">
+								<select class="form-control" name="college" value="<?php echo $college;?>">
 									<option>A C CLG OF ENGG AND TECH</option>
 									<option>Aalim Muhammed Salegh College of Engineering</option>
 									<option>Acharya Nagarjuna University College of Engg. & Tech.</option>
@@ -236,7 +240,6 @@
 									<option>VR Siddhartha Engineering College</option>
 								</select><span class="error"><?php echo $collegeErr;?></span>
 								<span class="help-text">Your college not on the list? Send us an email at cea15reg@gmail.com!</span>
-								<!-- <input type="text" id="college" class="form-control" placeholder="Enter college name" name="college" value="<?php #echo $college;?>"/>-->
 							</div>
 						</div>
 						
@@ -289,16 +292,16 @@
 			if (!($fname=="" or $email=="" or $number=="" or $genderRadio=="" or $accommodationRadio=="" or $college==""))	{
 				$sql = "INSERT INTO users2015 (fname, lname, email, phone, college, accommodation, gender) 
 				VALUES ('$fname', '$lname', '$email', '$number', '$college', '$accommodationRadio', '$genderRadio')";
-				echo "<span class=\"error\">New record created successfully!</span>";
+				if (mysqli_query($conn, $sql)) {
+				echo "<span class=\"error1\">New record created successfully</span>";
+			} else {
+				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			}
 			} else {
 				echo "<span class=\"error\">Entry not made, waiting for input.</span>";
 			}
 
-#			if (mysqli_query($conn, $sql)) {
-#				echo "New record created successfully";
-#			} else {
-#				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-#			}
+			
 
 			mysqli_close($conn);
 		?>
