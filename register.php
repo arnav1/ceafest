@@ -185,6 +185,7 @@
 									<option>JNTU Kakinada</option>
 									<option>Kakathiya Institute of Technolgy and sciences</option>
 									<option>Kallam Haranadh Reddy Institute Of Tech</option>
+									<option>Karunya University</option>
 									<option>KKR & KSR Institute of Technology & Sciences</option>
 									<option>KLU University</option>
 									<option>LENDI COLLEGE OF ENGINEERING</option>
