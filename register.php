@@ -233,8 +233,9 @@
 									<option>Vizag Institute of Technology</option>
 									<option>VNR</option>
 									<option>VR Siddhartha Engineering College</option>
-									<option>College not listed</option>
-								</select><!-- <input type="text" id="college" class="form-control" placeholder="Enter college name" name="college" value="<?php #echo $college;?>"/>--><span class="error"><?php echo $collegeErr;?></span>
+								</select><span class="error"><?php echo $collegeErr;?></span>
+								<span class="help-text">Your college not on the list? Send us an email at cea15reg@gmail.com!</span>
+								<!-- <input type="text" id="college" class="form-control" placeholder="Enter college name" name="college" value="<?php #echo $college;?>"/>-->
 							</div>
 						</div>
 						
