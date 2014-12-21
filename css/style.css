@@ -3,13 +3,13 @@ body {
 }
 
 .portfolioFilter a { 
-    margin-right: 10px; 
+/*    margin-right: 100px; 
 	color:#666;
-	text-decoration:none;
+	text-decoration:none; */
 }
 
 .portfolioFilter a.current { 
-    font-weight:bold;
+   /* font-weight:bold;  */
 }
 
 
