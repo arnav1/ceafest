@@ -36,17 +36,6 @@
 	</head>
 	<body onload="myFunction">
 	
-		<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<img src="img/cea_15.png" alt="CEAfest 2015" style="width:304px;height:144px">
-			</div>
-			<div class="col-md-5 col-md-offset-1">
-				<h1>CEAFest 2015: Register</h1>
-			</div>
-		</div>
-	</div>
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -61,6 +50,17 @@
 						<li class='last'><a href='#'><span>Contact Us</span></a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="img/cea_15.png" alt="CEAfest 2015" style="width:304px;height:144px">
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<h1>CEAFest 2015: Register</h1>
 			</div>
 		</div>
 	</div>
