@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 #cssmenu {
   background: #BC342B;
   width: auto;
@@ -35,7 +35,7 @@
   text-decoration: none;
   display: block;
   padding: 15px 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
