@@ -65,80 +65,11 @@
 		</div>
 	</div>
 		
-		<?php
-			// define variables and set to empty values
-			$fnameErr = $emailErr = $genderRadioErr = $numberErr = $collegeErr = $accommodationRadioErr ="";
-			$fname = $lname = $email = $number = $genderRadio = $accommodationRadio = $college = "";
-
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				if (empty($_POST["fname"])) {
-					$fnameErr = "Name is required";
-				} else {
-					$fname = test_input($_POST["fname"]);
-				// check if name only contains letters and whitespace
-					if (!preg_match("/^[a-zA-Z ]*$/",$fname)) {
-						$fnameErr = "Only letters and white space allowed"; 
-					}
-				}
-   
-				if (empty($_POST["email"])) {
-					$emailErr = "Email is required";
-				} else {
-					$email = test_input($_POST["email"]);
-				// check if e-mail address is well-formed
-					if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-						$emailErr = "Invalid email format"; 
-					}
-				}
-				
-				if (empty($_POST["number"])) {
-					$numberErr = "Name is required";
-				} else {
-					$number = test_input($_POST["number"]);
-				// check if number has only numbers
-					if (!preg_match("/^[0-9+]+$/", $number)) {
-						$numberErr = "Only numbers allowed"; 
-					}
-				}
-     
-				if (empty($_POST["lname"])) {
-					$lname = "";
-				} else {
-					$lname = test_input($_POST["lname"]);
-				}
-
-				if (empty($_POST["college"])) {
-					$collegeErr = "College is required";
-				} else {
-					$college =$_POST["college"];
-				}
-
-				if (empty($_POST["accommodationRadio"])) {
-					$accommodationRadioErr = "Information is required";
-				} else {
-					$accommodationRadio = test_input($_POST["accommodationRadio"]);
-				}
-				
-				if (empty($_POST["genderRadio"])) {
-					$genderRadioErr = "Gender is required";
-				} else {
-					$genderRadio = test_input($_POST["genderRadio"]);
-				}
-			}
-
-			function test_input($data) {
-				$data = trim($data);
-				$data = stripslashes($data);
-				$data = htmlspecialchars($data);
-				return $data;
-			}
-		?>
-		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h4><span class="error">* required fields</span></h4>
-					<form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+					<form class="form-horizontal" action="registered.php" method="post">
 						
 						<div class="form-group">
 							<label for="firstname" class="col-sm-2 control-label">First Name:<span class="error">*</span></label>
@@ -307,38 +238,5 @@
 			</div>
 		</div>
 		
-		<?php
-		// Create connection
-			$conn = mysqli_connect("localhost", "ceaiitm", "lightmachaa6$", "ceaiitm_cae2015");
-		// Check connection
-			if (!$conn) {
-				die("Connection failed: " . mysqli_connect_error());
-			}
-			
-			if (!($fname=="" or $email=="" or $number=="" or $genderRadio=="" or $accommodationRadio=="" or $college==""))	{
-				$sql = "INSERT INTO users2015 (fname, lname, email, phone, college, accommodation, gender) 
-				VALUES ('$fname', '$lname', '$email', '$number', '$college', '$accommodationRadio', '$genderRadio')";
-				if (mysqli_query($conn, $sql)) {
-				echo "<span class=\"error1\">New record created successfully</span>";
-			} else {
-				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-			}
-			} else {
-				echo "<span class=\"error\">Entry not made, waiting for input.</span>";
-			}
-
-			
-
-			mysqli_close($conn);
-		?>
-		
-	<!--	<script>
-			function myFunction(){
-				$("input[id=college]").hide();
-				$('#college').live('change', function () {  
-					$(this).next('input[type=text]').toggle((this.value) == "College not listed")
-				});
-			}
-		</script>  -->
 	</body>
 </html>
