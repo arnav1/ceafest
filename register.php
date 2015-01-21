@@ -19,12 +19,9 @@
 		<script src="script.js"></script>
 		
 		<style type="text/css">
-		body{
-		background-color:#EECD86;
-	<!--	background-image:url(img/tan_textured_background_seamless.jpg);
-		background-position:top left;
-		background-repeat:repeat;
-		background-attachment:fixed; -->
+		.bgimage{
+			opacity: 0.9;
+			filter: alpha(opacity=90);
 		}
 		.error{color: #FF0000;}
 		.error1{
@@ -34,7 +31,11 @@
 		</style>
 	
 	</head>
-	<body onload="myFunction">
+	<body>
+	
+	<div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%' class="bgimage">
+		<img src='green.jpg' style='width:100%;height:100%' alt='[]' />
+	</div>
 	
 	<div class="container">
 		<div class="row">
