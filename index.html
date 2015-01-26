@@ -10,21 +10,25 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>  
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		
 		<meta charset="UTF-8">
 		<title>CEA|Homepage</title>
 		
 		<style>
-			body{
-				background-color:#FFFFCC;
+		
+	/*		body{
+				position:relative;
+				background-image: url("./green.jpg");
+				-webkit-background-size: cover;
+ 				-moz-background-size: cover;
+ 				-o-background-size: cover;
+				background-size: 100%;
+				background-repeat: no-repeat;
 			}
-			#content{
-				width: 750px ;
-				margin-left: auto ;
-				margin-right: auto ;
-			}
-			#E1 {
+	*/		
+			
+/*			#E1 {
 				position:absolute;
 				top:248px;
 				left:628px;
@@ -139,7 +143,7 @@
 				-moz-transform: skew(0,30deg);
 				background: brown;
 				border-radius: 5px;
-			}
+			}   */
 			li {
 				font-weight:bolder;
 				font-size:30px;
@@ -147,7 +151,7 @@
 				color: Black;  
 				list-style: none;
 				position: absolute;
-            }
+            }   
             
 			li:hover {
 				font-weight:bolder;
@@ -156,83 +160,143 @@
 				color: #781E18;  
 				list-style: none;
 				position: absolute;
-                cursor: pointer;
-                cursor: hand; 
-                list-style-position:inside;
-                border: 2px solid #781E18;
-                border-radius: 5px;
+              		 	cursor: pointer;
+                		cursor: hand; 
+                		list-style-position:inside;
+                		border: 2px solid #781E18;
+               			 border-radius: 5px;              
 			}
 			
             
 			#register {
-				top: 158px;
-				left: 860px;
+                		position: fixed;
+				top: 26.28%;
+				left: 63.96%;
 			}
+			
 			#contact{
-				top: 495px;
-				left: 570px;
+                		position: fixed;
+				top: 78.2%;
+				left: 41.73%;
 			}
+			
 			#spons{
-				top: 422px;
-				left: 308px;
+                		position: fixed;
+				top: 64.52%;
+				left: 21.55%;
 			}
+			
 			#events{
-				top: 158px;
-				left: 308px;
+                		position: fixed;
+				top: 26.28%;
+				left: 21.55%;
 			}
+			
 			#hospi{
-				top: 76px;
-				left: 570px;
+                		position: fixed;
+				top: 11.66%;
+				left: 41.73%;
 			}
+			
 			#workshops{
-				top: 422px;
-				left: 860px;
+               			 position: fixed;
+				top: 64.52%;
+				left: 63.96%;
 			}
+			
+			#notifs{
+				font-weight:bolder;
+				font-family: 'Amaranth', serif;
+				font-size: 20px;
+				background-color: black;
+				color:white;
+				width: 100%;
+				display:block;
+				border-radius: 10px;
+				height:30px;
+			}
+            
+            #logo{
+                position: fixed;
+                top:20%;
+                left:36.5%;
+                height:59%;
+                width:25.2%;
+            }
+            
+                        
+            #fb{
+                position: fixed;
+                top: 92%;
+                left: 3%;
+                height: 35px;
+                }
+            
+            #yt{
+                position: fixed;
+                top: 92%;
+                left: 5%;
+                height: 35px;
+            }
+            
+             #cea{
+                position: fixed;
+                top: 92%;
+                left: 7%;
+                height: 35px;
+            }
+
+            
 		</style>
 </head>
 
 <body>
-
-	<div id="content">
-		<div id="E">
-			<div id="E1">
-			</div>
-			<div id="E2">
-			</div>
-			<div id="E3">
-			</div> 
+	<div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%'>
+		<img src='green.jpg' style='width:100%;height:100%' alt='[]' />
 		</div>
-		<div id="A">
-			<div id="A1">
-			</div>
-			<div id="A2">
-			</div>
-			<div id="A3">
-			</div>
-		</div>
-		<div id="C">
-			<div id="C1">
-			</div>
-			<div id="C2">
-			</div>
-			<div id="C3">
-			</div>
-		</div>
-	</div>
+  <div id="notifs"><marquee behavior="alternate">Registrations are open! CEAFest from 13-15 March, 2015</div></marquee>
+    <img src="img/300.png" id="logo">
+ <!--   <div id="E">
+        <div id="E1">
+        </div>
+        <div id="E2">
+        </div>
+        <div id="E3">
+        </div> 
+    </div>
+    <div id="A">
+        <div id="A1">
+        </div>
+        <div id="A2">
+        </div>
+        <div id="A3">
+        </div>
+    </div>
+    <div id="C">
+        <div id="C1">
+        </div>
+        <div id="C2">
+        </div>
+        <div id="C3">
+        </div>
+    </div>  -->
+	
 <!--	<canvas id="myCanvas" width="1366" height="720">
     </canvas>
 -->
     <ul>
     <a href="event.html"><li id="events">EVENTS</li></a>
-    <li id="contact">CONTACT US</li>
+    <a href="contact.html"><li id="contact">CONTACT US</li></a>
     <a href="Sponspage.html"><li id="spons">SPONSORS</li></a>
     <a href="register.php"><li id="register">REGISTRATION</li></a>
-    <li id="hospi">HOSPITALITY</li>
-    <li id="workshops">WORKSHOPS</li>
+    <a href="hospi.html"><li id="hospi">HOSPITALITY</li></a>
+    <a href="workshop.html"><li id="workshops">WORKSHOPS</li></a>
     </ul>
     
-    <p style="font-family:Amaranth;text-align:center;position:absolute;top:575px;left:560px;cursor:pointer;cursor:hand;text-decoration:underline;font-size:20px;" onclick="start()">Click to build CEA Logo!</p>
-    
+ <!--   <p style="font-family:Amaranth;text-align:center;position:absolute;top:575px;left:560px;cursor:pointer;cursor:hand;text-decoration:underline;font-size:20px;" onclick="start()">Click to build CEA Logo!</p> -->
+ 	<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png" id="fb"></a>
+	<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png" id="yt"></a>
+	<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png" id="cea"></a>
 </body>
     <script>                                                 // For creating circle
             var c=document.getElementById("myCanvas");
@@ -245,7 +309,7 @@
         
     </script>    
 
-    <script>                                                    //Display and animate Logo
+   <!-- <script>                                                    //Display and animate Logo
             
         function start() {
             document.getElementById("A3").style.visibility='hidden';
@@ -281,5 +345,5 @@
                 document.getElementById("E3").style.visibility='visible';
                 }
             
-    </script>
+    </script> -->
 </html>

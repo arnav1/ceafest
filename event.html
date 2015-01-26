@@ -29,13 +29,17 @@
 		}
 		
 		body {
-		font-family: 'Architects Daughter', cursive;
+		font-family: 'Amaranth',serif;
 		}
 		
 		h1 {
 			text-align:center;
 			font-weight:bold;
 			color:#781E18;
+		}
+		
+		.font2{
+			font-family: 'Architects Daughter', cursive;
 		}
 		
 		/* ---- button ---- */
@@ -135,6 +139,32 @@
 			filter: alpha(opacity=90);
 		}
 		
+		#fb{
+                position: fixed;
+                top: 92%;
+                left: 3%;
+                height: 35px;
+                }
+            
+            #yt{
+                position: fixed;
+                top: 92%;
+                left: 5%;
+                height: 35px;
+            }
+            
+             #cea{
+                position: fixed;
+                top: 92%;
+                left: 7%;
+                height: 35px;
+            }
+            
+            .bgimage{
+			opacity: 0.9;
+			filter: alpha(opacity=90);
+		}
+		
   </style>
   
 <script>
@@ -151,9 +181,13 @@
 
 <body>
 
-	<div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%'c class="bgimage">
-		<img src='green.jpg' style='width:100%;height:100%' alt='[]' />
-	</div>
+<div style='position:fixed;z-index:-1;left:0;top:0;width:100%;height:100%' class="bgimage">
+  <img src='green.jpg' style='width:100%;height:100%' alt='[]' />
+</div>
+	
+<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png" id="fb"></a>
+	<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png" id="yt"></a>
+	<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png" id="cea"></a>
 	
 	<div class="container">
 		<div class="row">
@@ -162,11 +196,11 @@
 					<ul>
 						<li><a href='index.html'><span>Home</span></a></li>
 						<li class='active'><a href='#'><span>Events</span></a></li>
-						<li><a href='#'><span>Workshops</span></a></li>
+						<li><a href='workshop.html'><span>Workshops</span></a></li>
 						<li><a href='register.php'><span>Register</span></a></li>
-						<li><a href='#'><span>Hospitality</span></a></li>
-						<li><a href='sponspage.html'><span>Sponsors</span></a></li>
-						<li class='last'><a href='#'><span>Contact Us</span></a></li>
+						<li><a href='hospi.html'><span>Hospitality</span></a></li>
+						<li><a href='Sponspage.html'><span>Sponsors</span></a></li>
+						<li class='last'><a href='contact.html'><span>Contact Us</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -175,10 +209,11 @@
 
   <div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<!--<div class="col-md-3">
 				<img src="img/cea_15.png" alt="CEAfest 2015" style="width:304px;height:144px">
 			</div>
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-5 col-md-offset-1">-->
+			<div class="col-md-12">
 				<h1>CEAFest 2015: Events</h1>
 			</div>
 		</div>
@@ -202,34 +237,34 @@
 			<div class="col-md-10 col-md-offset-1">
 				<div class="isotope">
 					
-					<a href="#aquanomics" data-toggle="modal"><div class="element-item online onsite">
+					<a href="#aquanomics" data-toggle="modal"><div class="element-item online onsite font2">
 						<p class="symbol">Aquanomics</p>
 					</div></a>
-					<a href="#CAD" data-toggle="modal"><div class="element-item onsite">
+					<a href="#CAD" data-toggle="modal"><div class="element-item onsite font2">
 						<p class="symbol">CAD</p>
 					</div></a>
-					<a href="#challenge" data-toggle="modal"><div class="element-item online onsite">
+					<a href="#challenge" data-toggle="modal"><div class="element-item online onsite font2">
 						<p class="symbol" style="font-size: 34px">Concrete Challenge</p>
 					</div></a>
-					<div class="element-item onsite">
+					<div class="element-item onsite font2">
 						<p class="symbol">Quiz</p>
 					</div>
-					<a href="#debate" data-toggle="modal"><div class="element-item onsite">
+					<a href="#debate" data-toggle="modal"><div class="element-item onsite font2">
 						<p class="symbol">Debate</p>
 					</div></a>
-					<a href="#master" data-toggle="modal"><div class="element-item online onsite">
+					<a href="#master" data-toggle="modal"><div class="element-item online onsite font2">
 						<p class="symbol" style="font-size: 34px">Master Builder</p>
 					</div></a>
-					<a href="#modelling" data-toggle="modal"><div class="element-item onsite">
+					<a href="#modelling" data-toggle="modal"><div class="element-item onsite font2">
 						<p class="symbol">Modelling</p>
 					</div></a>
-					<a href="#potential" data-toggle="modal"><div class="element-item onsite">
+					<a href="#potential" data-toggle="modal"><div class="element-item onsite font2">
 						<p class="symbol" style="font-size: 34px">Potential Professor</p>
 					</div></a>
-					<a href="#sdc" data-toggle="modal"><div class="element-item online ">
+					<a href="#sdc" data-toggle="modal"><div class="element-item online  font2">
 						<p class="symbol">SDC</p>
 					</div></a>
-					<div class="element-item onsite">
+					<div class="element-item onsite font2">
 						<p class="symbol">Geo-genius</p>
 					</div>
 				</div>
@@ -819,9 +854,14 @@
 											<p>Email id: potentialprof15.ceaiitm@gmail.com</p>
 											
 											<p>
-												Ramya Desineedi							Rahul Sakhare
-												+919884180556 							+919043244545 
-												ramya.desineedi@gmail.com 				rahulsakhare95@gmail.com
+												Ramya Desineedi							 
+											<br/>	+919884180556 							 
+											<br/>	ramya.desineedi@gmail.com 				
+											</p>
+											<p>
+											Rahul Sakhare <br/>
+											+919043244545  <br/>
+											rahulsakhare95@gmail.com
 											</p>
 
 										</div>

@@ -8,9 +8,11 @@
 		<meta charset="UTF-8">
 		<title>CEAfest|Register</title>
 		
+		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amaranth">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +21,9 @@
 		<script src="script.js"></script>
 		
 		<style type="text/css">
+		body {
+		font-family: 'Amaranth',serif;
+		}
 		.bgimage{
 			opacity: 0.9;
 			filter: alpha(opacity=90);
@@ -28,6 +33,31 @@
 			color: #FF0000;
 			font-size: 20px;
 		}
+		#fb{
+                position: fixed;
+                top: 92%;
+                left: 3%;
+                height: 35px;
+                }
+            
+            #yt{
+                position: fixed;
+                top: 92%;
+                left: 5%;
+                height: 35px;
+            }
+            
+             #cea{
+                position: fixed;
+                top: 92%;
+                left: 7%;
+                height: 35px;
+            }
+			h1 {
+			text-align:center;
+			font-weight:bold;
+			color:#781E18;
+		}
 		</style>
 	
 	</head>
@@ -36,6 +66,9 @@
 	<div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%' class="bgimage">
 		<img src='green.jpg' style='width:100%;height:100%' alt='[]' />
 	</div>
+	<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png" id="fb"></a>
+	<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png" id="yt"></a>
+	<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png" id="cea"></a>
 	
 	<div class="container">
 		<div class="row">
@@ -44,11 +77,11 @@
 					<ul>
 						<li><a href='index.html'><span>Home</span></a></li>
 						<li><a href='event.html'><span>Events</span></a></li>
-						<li><a href='#'><span>Workshops</span></a></li>
+						<li><a href='workshop.html'><span>Workshops</span></a></li>
 						<li class='active'><a href='#'><span>Register</span></a></li>
-						<li><a href='#'><span>Hospitality</span></a></li>
-						<li><a href='sponspage.html'><span>Sponsors</span></a></li>
-						<li class='last'><a href='#'><span>Contact Us</span></a></li>
+						<li><a href='hospi.html'><span>Hospitality</span></a></li>
+						<li><a href='Sponspage.html'><span>Sponsors</span></a></li>
+						<li class='last'><a href='contact.html'><span>Contact Us</span></a></li>
 					</ul>
 				</div>
 			</div>

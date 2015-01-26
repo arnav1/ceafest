@@ -1,401 +1,411 @@
 <html>
 <head>
-<title>Random</title>
+<title>CEA|Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amaranth">
 <style>
-#square1{
+body
+  {
+    font-family: 'Amaranth',serif;
+ }
+#heading{
+  position:absolute;
+  font-family: 'Amaranth',serif;
+  font-size: 35px;
+    left: 45%;
+    top:10%;
+  }
+#webops{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#webops:hover{
   font-family: Arial, Verdana;
-font-size: 50px;
-  margin: 0;
-  padding:0;
-  list-style: none;
+  font-size: 20px;
+  background-image:url('./images1.jpg');
+}
+#webcontact{
+   font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#events{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#events:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+ background-image:url('./images1.jpg');
+}
+#eventscontact{
+  font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#spons{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+} 
+#spons:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  background-image:url('./images1.jpg');
+}
+#sponscontact{
+  font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#facilities{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#facilities:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  background-image:url('./images1.jpg');
+}
+#facilitiescontact{
+  font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#logistics{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#logistics:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  background-image:url('./images1.jpg');
+}
+#logisticscontact{
+   font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#projects{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#projects:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  background-image:url('./images1.jpg');
+}
+#projectscontact{
+   font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#qms{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#qms:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+ background-image:url('./images1.jpg');
+}
+#qmscontact{
+  font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#design{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#design:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+ background-image:url('./images1.jpg');
+}
+#designcontact{
+   font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+#publicity{
+   position:absolute;
+   font-family: Arial, Verdana;
+   font-size: 20px;
+   background-image:url('./background.jpg');
+}
+#publicity:hover{
+  font-family: Arial, Verdana;
+  font-size: 20px;
+ background-image:url('./images1.jpg');
+}
+#publicitycontact{
+   font-size:30px;
+   border-radius:20px;
+   opacity:0.7;
+   padding: 20px;
+   font-family: algerian;
+   text-align: center;
+   color: blue;
+   }
+.departments:hover{
+      opacity:0.8;
+      border: 2px solid white;
+      -webkit-transition:background-image 0.5s,opacity 0.5s;
 }
 </style>
 </head>
 <body>
-<h1>CEA</h1><br>
-<h2>CONTACT US</h2><br>
-<a href="http://www.google.com">HOME</a><br>
-<marquee>CEA - IIT MADRAS</marquee><br>
-<img src="images1.jpg" ID="1"style="position:absolute;top:300px;left:100px" onclick="visible1"></img>
-<img src="images1.jpg" ID="2"style="position:absolute;top:300px;left:400px" onclick="visible2"></img>
-<img src="images1.jpg" ID="3"style="position:absolute;top:300px;left:700px" onclick="visible3"></img>
-<img src="images1.jpg" ID="4"style="position:absolute;top:600px;left:100px" onclick="visible4"></img>
-<img src="images1.jpg" ID="5"style="position:absolute;top:600px;left:400px" onclick="visible5"></img>
-<img src="images1.jpg" ID="6"style="position:absolute;top:600px;left:700px" onclick="visible6"></img>
-<img src="images1.jpg" ID="7"style="position:absolute;top:900px;left:100px" onclick="visible7"></img>
-<img src="images1.jpg" ID="8"style="position:absolute;top:900px;left:400px" onclick="visible8"></img>
-<img src="images1.jpg" ID="9"style="position:absolute;top:900px;left:700px" onclick="visible9"></img>
-<img src="images1.jpg" ID="10"style="position:absolute;top:1200px;left:100px" onclick="visible10"></img>
-<img src="images1.jpg" ID="11"style="position:absolute;top:1200px;left:400px" onclick="visible11"></img>
-<img src="images1.jpg" ID="12"style="position:absolute;top:1200px;left:700px" onclick="visible12"></img>
-<img src="images1.jpg" ID="13"style="position:absolute;top:1500px;left:100px" onclick="visible13"></img>
-<img src="images1.jpg" ID="14"style="position:absolute;top:1500px;left:400px" onclick="visible14"></img>
-<img src="images1.jpg" ID="15"style="position:absolute;top:1500px;left:700px" onclick="visible15"></img>
-<img src="images1.jpg" ID="16"style="position:absolute;top:1800px;left:100px" onclick="visible16"></img>
-<img src="images1.jpg" ID="17"style="position:absolute;top:1800px;left:400px" onclick="visible17"></img>
-<img src="images1.jpg" ID="18"style="position:absolute;top:1800px;left:700px" onclick="visible18"></img>
-
-<div ID="otherpage" style="position:absolute;height:1800;width:100;background:yellow;top:300px;left:0px" onmouseover="change0()" onmouseout="CHANGE0()">
+    <div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%'>
+  <img src='green.jpg' style='width:100%;height:100%;opacity:0.8' alt='[]' />
 </div>
-<div ID="rectangle" style="position:absolute;height:1800;width:20;background:green;top:300px;left:0px" onmouseover="change0()" onmouseout="CHANGE0()">
+<div id="all">
+                             <br><div id="heading">CEA:Contact Us</div><br>
+<div class="departments" ID="webops" style="position:absolute;height:100;width:260;top:200px;left:150;text-align:center;" onclick="visible1()">
+                              <br>WEBOPS:ARNAV<br>
 </div>
-<div ID="square1" style="position:absolute;height:200;width:260;background:pink;top:300px;left:100px" onmouseover="change1()" onmouseout="CHANGE1()" >
+<div class="departments" ID="events" style="position:absolute;height:100;width:260;top:200px;left:420;text-align:center;" onclick="visible2()">
+                              <br>EVENTS:B<br>
 </div>
-<div ID="square2" style="position:absolute;height:200;width:260;background:pink;top:300px;left:400px"onmouseover="change2()" onmouseout="CHANGE2()" >
+<div class="departments" ID="spons" style="position:absolute;height:100;width:260;top:200px;left:690;text-align:center;" onclick="visible3()">
+                              <br>SPONS:C<br>
 </div>
-<div ID="square3" style="position:absolute;height:200;width:260;background:pink;top:300px;left:700px"onmouseover="change3()" onmouseout="CHANGE3()" >
+<div class="departments" ID="facilities" style="position:absolute;height:100;width:260;top:310px;left:150;text-align:center;" onclick="visible4()">
+                              <br>FACILITIES:D<br>
 </div>
-<div ID="square4" style="position:absolute;height:200;width:260;background:pink;top:600px;left:100px"onmouseover="change4()" onmouseout="CHANGE4()">
+<div class="departments" ID="logistics" style="position:absolute;height:100;width:260;top:310px;left:420;text-align:center;" onclick="visible5()">
+                              <br>LOGISTICS:E<br>
 </div>
-<div ID="square5" style="position:absolute;height:200;width:260;background:pink;top:600px;left:400px"onmouseover="change5()" onmouseout="CHANGE5()">
+<div class="departments" ID="projects" style="position:absolute;height:100;width:260;top:310px;left:690;text-align:center;" onclick="visible6()">
+                              <br>PROJECTS:F<br>
 </div>
-<div ID="square6" style="position:absolute;height:200;width:260;background:pink;top:600px;left:700px"onmouseover="change6()" onmouseout="CHANGE6()">
+<div class="departments" ID="qms" style="position:absolute;height:100;width:260;top:420px;left:150;text-align:center;" onclick="visible7()">
+                              <br>QMS:G<br>
 </div>
-<div ID="square7" style="position:absolute;height:200;width:260;background:pink;top:900px;left:100px"onmouseover="change7()" onmouseout="CHANGE7()">
+<div class="departments" ID="design" style="position:absolute;height:100;width:260;top:420px;left:420;text-align:center;" onclick="visible8()">
+                              <br>DESIGN:H<br>
 </div>
-<div ID="square8" style="position:absolute;height:200;width:260;background:pink;top:900px;left:400px"onmouseover="change8()" onmouseout="CHANGE8()">
+<div class="departments" ID="publicity" style="position:absolute;height:100;width:260;top:420px;left:690;text-align:center;" onclick="visible9()">
+                              <br>PUBLICITY:I<br>
 </div>
-<div ID="square9" style="position:absolute;height:200;width:260;background:pink;top:900px;left:700px"onmouseover="change9()" onmouseout="CHANGE9()">
+                                
 </div>
-<div ID="square10" style="position:absolute;height:200;width:260;background:pink;top:1200px;left:100px"onmouseover="change10()" onmouseout="CHANGE10()">
+<div ID="webcontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white">
+<img src="exit.png" ID="exit1" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop1()">
+<img src="photo.jpg" ID="core1" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>WEBOPS</b>:ARNAV  <br><b>Phone No.:</b>0000000000<br>  <b>Email:</b>arnav@gmail.com
 </div>
-<div ID="square11" style="position:absolute;height:200;width:260;background:pink;top:1200px;left:400px"onmouseover="change11()" onmouseout="CHANGE11()">
+<div ID="eventscontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit2" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop2()">
+<img src="photo.jpg" ID="core2" style="position:fixed;top:100;left:900;height:150;width:150;">
+<img src="photo.jpg" ID="core3" style="position:fixed;top:300;left:900;height:150;width:150;">
+                              <br><b>EVENTS:B </b>  <br><b>Phone No.:</b>0000000000  <br><b> Email:</b>b@gmail.com
 </div>
-<div ID="square12" style="position:absolute;height:200;width:260;background:pink;top:1200px;left:700px"onmouseover="change12()" onmouseout="CHANGE12()">
+<div ID="sponscontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit3" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop3()">
+<img src="photo.jpg" ID="core4" style="position:fixed;top100;left:900;height:150;width:150;">
+<img src="photo.jpg" ID="core5" style="position:fixed;top:300;left:900;height:150;width:150;">
+                              <br><b>SPONS:</b>C  <br><b>Phone No.:</b>0000000000 <br> <b>Email:</b>c@gmail.com
 </div>
-<div ID="square13" style="position:absolute;height:200;width:260;background:pink;top:1500px;left:100px"onmouseover="change13()" onmouseout="CHANGE13()">
+<div ID="facilitiescontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit4" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop4()">
+<img src="photo.jpg" ID="core6" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>FACILITIES:</b>D <br> <b>Phone No.:</b>0000000000<br><b>  Email:</b>d@gmail.com
 </div>
-<div ID="square14" style="position:absolute;height:200;width:260;background:pink;top:1500px;left:400px"onmouseover="change14()" onmouseout="CHANGE14()">
+<div ID="logisticscontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit5" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop5()">
+<img src="photo.jpg" ID="core7" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>LOGISTICS:</b>E<br>  <b>Phone No.:</b>0000000000<br>  <b>Email:</b>e@gmail.com
 </div>
-<div ID="square15" style="position:absolute;height:200;width:260;background:pink;top:1500px;left:700px"onmouseover="change15()" onmouseout="CHANGE15()">
+<div ID="projectscontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit6" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop6()">
+<img src="photo.jpg" ID="core8" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>PROJECTS:</b>F <br> <b>Phone No.:</b>0000000000 <br><b> Email:</b>f@gmail.com
 </div>
-<div ID="square16" style="position:absolute;height:200;width:260;background:pink;top:1800px;left:100px"onmouseover="change16()" onmouseout="CHANGE16()">
+<div ID="qmscontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit7" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop7()">
+<img src="photo.jpg" ID="core9" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>QMS:</b>G<br> <b> Phone No.:</b>0000000000<br> <b> Email:</b>g@gmail.com
 </div>
-<div ID="square17" style="position:absolute;height:200;width:260;background:pink;top:1800px;left:400px"onmouseover="change17()" onmouseout="CHANGE17()">
+<div ID="designcontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit8" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop8()">
+<img src="photo.jpg" ID="core10" style="position:fixed;top:250;left:600;height:150;width:150;">
+                              <br><b>DESIGN:</b>H <br><b> Phone No.:</b>0000000000 <br><b> Email:</b>h@gmail.com
 </div>
-<div ID="square18" style="position:absolute;height:200;width:260;background:pink;top:1800px;left:700px"onmouseover="change18()" onmouseout="CHANGE18()">
+<div ID="publicitycontact" style="position:fixed;height:400;width:900;top:50;left:200;background-color:white;">
+<img src="exit.png" ID="exit9" style="position:fixed;top:45;left:1105;height:40;width:40;" onclick="closepop9()">
+<img src="photo.jpg" ID="core11" style="position:fixed;top100;left:900;height:150;width:150;">
+<img src="photo.jpg" ID="core12" style="position:fixed;top:300;left:900;height:150;width:150;">
+                              <br><b>PUBLICITY:</b>I <br> <b>Phone No.:</b>0000000000 <br> <b>Email:</b>i@gmail.com
 </div>
-<div ID="SQUARE1" style="position:absolute;height:440;width:300;background:blue;top:190px;left:1000px; display:none">
-</div>
-<div ID="SQUARE2" style="position:absolute;height:440;width:300;background:blue;top:190px;left:1000px; display:none">
-</div>
-<div ID="SQUARE3" style="position:absolute;height:440;width:300;background:blue;top:190px;left:1000px; display:none">
-</div>
-<div ID="SQUARE4" style="position:absolute;height:440;width:300;background:blue;top:490px;left:1000px; display:none">
-</div>
-<div ID="SQUARE5" style="position:absolute;height:440;width:300;background:blue;top:490px;left:1000px; display:none">
-</div>
-<div ID="SQUARE6" style="position:absolute;height:440;width:300;background:blue;top:490px;left:1000px; display:none">
-</div>
-<div ID="SQUARE7" style="position:absolute;height:440;width:300;background:blue;top:790px;left:1000px; display:none">
-</div>
-<div ID="SQUARE8" style="position:absolute;height:440;width:300;background:blue;top:790px;left:1000px; display:none">
-</div>
-<div ID="SQUARE9" style="position:absolute;height:440;width:300;background:blue;top:790px;left:1000px; display:none">
-</div>
-<div ID="SQUARE10" style="position:absolute;height:440;width:300;background:blue;top:1090px;left:1000px; display:none">
-</div>
-<div ID="SQUARE11" style="position:absolute;height:440;width:300;background:blue;top:1090px;left:1000px; display:none">
-</div>
-<div ID="SQUARE12" style="position:absolute;height:440;width:300;background:blue;top:1090px;left:1000px; display:none">
-</div>
-<div ID="SQUARE13" style="position:absolute;height:440;width:300;background:blue;top:1390px;left:1000px; display:none">
-</div>
-<div ID="SQUARE14" style="position:absolute;height:440;width:300;background:blue;top:1390px;left:1000px; display:none">
-</div>
-<div ID="SQUARE15" style="position:absolute;height:440;width:300;background:blue;top:1390px;left:1000px; display:none">
-</div>
-<div ID="SQUARE16" style="position:absolute;height:440;width:300;background:blue;top:1690px;left:1000px; display:none">
-</div>
-<div ID="SQUARE17" style="position:absolute;height:440;width:300;background:blue;top:1690px;left:1000px; display:none">
-</div>
-<div ID="SQUARE18" style="position:absolute;height:440;width:300;background:blue;top:1690px;left:1000px; display:none">
-</div>
+     <br><br><br><br><br>
 </body>
 <script>
-function change0(){
-a=document.getElementById("rectangle");
-b=document.getElementById("otherpage");
-a.style.visibility="hidden";
-b.style.visibility="visible";
-console.log("s")
-}
-function CHANGE0(){
-a=document.getElementById("rectangle");
-b=document.getElementById("otherpage");
-a.style.visibility="visible";
-b.style.visibility="hidden";
-console.log("s")
-}
-function change1(){
-a=document.getElementById("square1");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE1(){
-a=document.getElementById("square1");
-a.style.visibility="visible";
-console.log("s")
-}
-function change2(){
-a=document.getElementById("square2");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE2(){
-a=document.getElementById("square2");
-a.style.visibility="visible";
-console.log("s")
-}
-function change3(){
-a=document.getElementById("square3");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE3(){
-a=document.getElementById("square3");
-a.style.visibility="visible";
-console.log("s")
-}
-function change4(){
-a=document.getElementById("square4");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE4(){
-a=document.getElementById("square4");
-a.style.visibility="visible";
-console.log("s")
-}
-function change5(){
-a=document.getElementById("square5");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE5(){
-a=document.getElementById("square5");
-a.style.visibility="visible";
-console.log("s")
-}
-function change6(){
-a=document.getElementById("square6");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE6(){
-a=document.getElementById("square6");
-a.style.visibility="visible";
-console.log("s")
-}
-function change7(){
-a=document.getElementById("square7");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE7(){
-a=document.getElementById("square7");
-a.style.visibility="visible";
-console.log("s")
-}
-function change8(){
-a=document.getElementById("square8");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE8(){
-a=document.getElementById("square8");
-a.style.visibility="visible";
-console.log("s")
-}
-function change9(){
-a=document.getElementById("square9");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE9(){
-a=document.getElementById("square9");
-a.style.visibility="visible";
-console.log("s")
-}
-function change10(){
-a=document.getElementById("square10");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE10(){
-a=document.getElementById("square10");
-a.style.visibility="visible";
-console.log("s")
-}
-function change11(){
-a=document.getElementById("square11");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE11(){
-a=document.getElementById("square11");
-a.style.visibility="visible";
-console.log("s")
-}
-function change12(){
-a=document.getElementById("square12");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE12(){
-a=document.getElementById("square12");
-a.style.visibility="visible";
-console.log("s")
-}
-function change13(){
-a=document.getElementById("square13");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE13(){
-a=document.getElementById("square13");
-a.style.visibility="visible";
-console.log("s")
-}
-function change14(){
-a=document.getElementById("square14");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE14(){
-a=document.getElementById("square14");
-a.style.visibility="visible";
-console.log("s")
-}
-function change15(){
-a=document.getElementById("square15");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE15(){
-a=document.getElementById("square15");
-a.style.visibility="visible";
-console.log("s")
-}
-function change16(){
-a=document.getElementById("square16");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE16(){
-a=document.getElementById("square16");
-a.style.visibility="visible";
-console.log("s")
-}
-function change17(){
-a=document.getElementById("square17");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE17(){
-a=document.getElementById("square17");
-a.style.visibility="visible";
-console.log("s")
-}
-function change18(){
-a=document.getElementById("square18");
-a.style.visibility="hidden";
-console.log("s")
-}
-function CHANGE18(){
-a=document.getElementById("square18");
-a.style.visibility="visible";
-console.log("s")
-}
+
 function visible1(){
-a=document.getElementById("SQUARE1");
-a.style.visibility="visible";
-console.log("s")
-}
+
+	a=document.getElementById("webcontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.2;
+	}
+
+function closepop1(){
+	a=document.getElementById("webcontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+        }
+document.getElementById("webcontact").style.visibility="hidden";
+
 function visible2(){
-a=document.getElementById("SQUARE2");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("eventscontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop2(){
+	a=document.getElementById("eventscontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("eventscontact").style.visibility="hidden";
 function visible3(){
-a=document.getElementById("SQUARE3");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("sponscontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop3(){
+	a=document.getElementById("sponscontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("sponscontact").style.visibility="hidden";
 function visible4(){
-a=document.getElementById("SQUARE4");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("facilitiescontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop4(){
+	a=document.getElementById("facilitiescontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("facilitiescontact").style.visibility="hidden";
 function visible5(){
-a=document.getElementById("SQUARE5");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("logisticscontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop5(){
+	a=document.getElementById("logisticscontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("logisticscontact").style.visibility="hidden";
 function visible6(){
-a=document.getElementById("SQUARE6");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("projectscontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop6(){
+	a=document.getElementById("projectscontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("projectscontact").style.visibility="hidden";
 function visible7(){
-a=document.getElementById("SQUARE7");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("qmscontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop7(){
+	a=document.getElementById("qmscontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("qmscontact").style.visibility="hidden";
 function visible8(){
-a=document.getElementById("SQUARE8");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("designcontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop8(){
+	a=document.getElementById("designcontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("designcontact").style.visibility="hidden";
 function visible9(){
-a=document.getElementById("SQUARE9");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible10(){
-a=document.getElementById("SQUARE10");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible11(){
-a=document.getElementById("SQUARE11");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible12(){
-a=document.getElementById("SQUARE12");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible13(){
-a=document.getElementById("SQUARE13");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible14(){
-a=document.getElementById("SQUARE14");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible15(){
-a=document.getElementById("SQUARE15");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible16(){
-a=document.getElementById("SQUARE16");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible17(){
-a=document.getElementById("SQUARE17");
-a.style.visibility="visible";
-console.log("s")
-}
-function visible18(){
-a=document.getElementById("SQUARE18");
-a.style.visibility="visible";
-console.log("s")
-}
+	a=document.getElementById("publicitycontact");
+	a.style.visibility="visible";
+	document.getElementById("all").style.opacity=0.1;
+	}
+
+function closepop9(){
+	a=document.getElementById("publicitycontact");
+	a.style.visibility="hidden";
+        b=document.getElementById("all");
+        b.style.opacity=1;
+	}
+document.getElementById("publicitycontact").style.visibility="hidden";
 </script>
 </html>
