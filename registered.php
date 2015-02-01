@@ -82,7 +82,8 @@
 						<li class='active'><a href='#'><span>Register</span></a></li>
 						<li><a href='hospi.html'><span>Hospitality</span></a></li>
 						<li><a href='Sponspage.html'><span>Sponsors</span></a></li>
-						<li class='last'><a href='contact.html'><span>Contact Us</span></a></li>
+						<li><a href='contact.html'><span>Contact Us</span></a></li>
+						<li class="last"><a href="../cea/NC3_Problem_Statement.pdf" target="_blank">NCCC</a></li>
 					</ul>
 				</div>
 			</div>
