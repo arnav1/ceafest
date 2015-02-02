@@ -142,6 +142,8 @@
 									<option>Aalim Muhammed Salegh College of Engineering</option>
 									<option>Acharya Nagarjuna University College of Engg. & Tech.</option>
 									<option>Aditya Engineering College</option>
+									<option>AMRITA SCHOOL OF ENGINEERING, COIMBATORE</option>
+									<option>Amrita Vishwa Vidyapeetham</option>
 									<option>Andhra Loyala Institute of Engineering & Technology</option>
 									<option>ANDHRA UNIVERSITY</option>
 									<option>Andhra University College of Engineering</option>
@@ -150,11 +152,14 @@
 									<option>Bapatla Engineering college</option>
 									<option>Bharath University, Chennai</option>
 									<option>BITS HYD</option>
+									<option>BMS College of Engineering</option>
 									<option>CBIT</option>
 									<option>Chaitanya Institute Of Technology & Science</option>
 									<option>Chalapathi Institute of Engineering& Technology</option>
 									<option>Chalapathi Institute of Technology</option>
 									<option>COASTAL INSTITUTE OF TECHNOLOGY</option>
+									<option>Cochin University of Science and Technology (CUSAT), Kochi</option>
+									<option>College of Engineering , Trivandrum</option>
 									<option>Dadi Institute of Engineering & Technology</option>
 									<option>Daita Mahdusudana Sastry Sri Venkateswara Hindu (DMSSVH) College of Engineering</option>
 									<option>Department of Civil Engineering, B.S. Abdur Rahman University</option>
@@ -162,6 +167,7 @@
 									<option>Devineni Venkataramana & Dr. Hima Sekhar MIC College of Technology</option>
 									<option>DHANISH AHMED CLG OF ENGG</option>
 									<option>DVPSIT</option>
+									<option>ERODE BUILDERS EDUCATIONAL TRUST'S GROUP OF INSTITUTIONS</option>
 									<option>ERODE SENGUTHAR ENGG CLG</option>
 									<option>Gandhiji Institute of Science & Technology</option>
 									<option>GAYATRI VIDYA PARISHAD</option>
@@ -170,24 +176,29 @@
 									<option>GITAM Institute of Technology</option>
 									<option>GITAM UNIVERSITY</option>
 									<option>Gokaraju Rangaraju Institute of Engineering and Technology</option>
+									<option>Government Engineering College,Bartonhill,Trivandrum</option>
 									<option>GOVT CLG OF ENGG</option>
-									<option>Gurunank </option>
+									<option>Gurunanak engineering college-Hyderabad</option>
 									<option>Hindustan College of Engineering</option>
 									<option>IIT Hyderabad</option>
 									<option>IIT Madras</option>
+									<option>INSTITUTE OF ROAD AND TRANSPORT TECHNOLOGY</option>
 									<option>JERUSALEM CLG OF ENGG</option>
 									<option>JNTU</option>
 									<option>JNTU COLLEGE OF ENGINEERING</option>
 									<option>JNTU Kakinada</option>
 									<option>Kakathiya Institute of Technolgy and sciences</option>
+									<option>KAKINADA INSTITUTE OF TECHNOLOGY&SCIENCE</option>
 									<option>Kallam Haranadh Reddy Institute Of Tech</option>
 									<option>Karunya University</option>
 									<option>KKR & KSR Institute of Technology & Sciences</option>
 									<option>KLU University</option>
 									<option>LENDI COLLEGE OF ENGINEERING</option>
 									<option>Magna College of Engineering</option>
+									<option>Manipal Institute of Technology(MIT), Manipal</option>
 									<option>Meenakshi Sundararajan Engineering College</option>
 									<option>MS RAMAIH INSTITUTE OF TECH</option>
+									<option>Muthoot Institute Of technology & Science , Varikoli</option>
 									<option>MVGR COLLEGE OF ENGINEERING</option>
 									<option>MVSR</option>
 									<option>Narasaraopeta Engineering College</option>
@@ -196,10 +207,13 @@
 									<option>Noble Institute of Science & Technology</option>
 									<option>NRI Institute of Technology</option>
 									<option>Osmania University</option>
+									<option>PONDICHERRY ENGINEERING COLLEGE</option>
 									<option>Pragathi Engineering College</option>
 									<option>Prasad V Potluri Siddhartha Institute of Technology</option>
 									<option>PRIME Engineering College</option>
+									<option>PRIYADARSHINI ENGINEERING COLLEGE</option>
 									<option>PSG TECH</option>
+									<option>PSNA COLLEGE OF ENGINEERING AND TECHNOLOGY, DINDIGUL</option>
 									<option>Pydah College of Engineering</option>
 									<option>RAGHU ENGINEERING COLLEGE</option>
 									<option>Raghu Institute of Technology</option>
@@ -213,6 +227,7 @@
 									<option>SONA CLG OF TECH</option>
 									<option>SR engineering college</option>
 									<option>SREE VIDYANIKETAN ENGG CLG</option>
+									<option>Sri Krishna college of technology,Coimbatore</option>
 									<option>Sri. Venkateswara College of Engineering</option>
 									<option>SRK INSTITUTE OF TECH</option>
 									<option>SRK Institute of Technology</option>
@@ -224,8 +239,10 @@
 									<option>University departments of Anna University, Chennai - CEG Campus</option>
 									<option>VASAVI</option>
 									<option>Vasireddy Venkatadri Institute of Technology</option>
+									<option>velammal engineering college</option>
 									<option>VIGNAN CLG OF ENGG</option>
 									<option>Vignans Institute of Information Technology</option>
+									<option>VIT, Chennai</option>
 									<option>Viswanadha Institute of Technology & Management</option>
 									<option>Vizag Institute of Technology</option>
 									<option>VNR</option>
