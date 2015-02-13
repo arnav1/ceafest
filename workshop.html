@@ -53,6 +53,12 @@
 			opacity: 0.9;
 			filter: alpha(opacity=90);
 		}
+		.contenthover { padding:20px 20px 10px 20px; }
+		.contenthover, .contenthover h3, contenthover a { color:#fff; }
+		.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.contenthover a.mybutton:hover { background:#34742d }
+
 </style>    
 </head>
 <body>
@@ -79,17 +85,34 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="row">
+			<!--<div class="col-md-3">
+				<img src="img/cea_15.png" alt="CEAfest 2015" style="width:304px;height:144px">
+			</div>
+			<div class="col-md-5 col-md-offset-1">-->
+			<div class="col-md-12">
+				<h1>CEAFest 2015: Events</h1>
+			</div>
+		</div>
+	</div>
 	
 <a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png" id="fb"></a>
 	<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png" id="yt"></a>
 	<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png" id="cea"></a>
+
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<h1 style="text-align: center;">This page will be updated soon!<h1>
+		<div class="col-md-4 col-md-offset-2">
+			<img src="img/staad_1.jpg" id="d1" style="width: 400px; height: 600px " >
+			<div class="contenthover"></div>
 		</div>
 	<div>
 </div>
+
+<script type="text/javascript" src="js/contentHover.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -98,6 +121,13 @@
 
   ga('create', 'UA-59208647-1', 'auto');
   ga('send', 'pageview');
+
+
+  $('#d1').contenthover({
+    overlay_background:'#000',
+    overlay_opacity:0.8
+});
+
 
 </script>
 </body>

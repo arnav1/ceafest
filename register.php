@@ -159,6 +159,7 @@
 									<option>Chalapathi Institute of Technology</option>
 									<option>COASTAL INSTITUTE OF TECHNOLOGY</option>
 									<option>Cochin University of Science and Technology (CUSAT), Kochi</option>
+									<option>Coimbatore institute of technology </option>
 									<option>College of Engineering , Trivandrum</option>
 									<option>Dadi Institute of Engineering & Technology</option>
 									<option>Daita Mahdusudana Sastry Sri Venkateswara Hindu (DMSSVH) College of Engineering</option>
@@ -166,7 +167,9 @@
 									<option>Department of Civil Engineering, St.Peter's University</option>
 									<option>Devineni Venkataramana & Dr. Hima Sekhar MIC College of Technology</option>
 									<option>DHANISH AHMED CLG OF ENGG</option>
+									<option>Dr. Mgr university</option>
 									<option>DVPSIT</option>
+									<option>Easwari Engineering college</option>
 									<option>ERODE BUILDERS EDUCATIONAL TRUST'S GROUP OF INSTITUTIONS</option>
 									<option>ERODE SENGUTHAR ENGG CLG</option>
 									<option>Gandhiji Institute of Science & Technology</option>
@@ -193,7 +196,9 @@
 									<option>Karunya University</option>
 									<option>KKR & KSR Institute of Technology & Sciences</option>
 									<option>KLU University</option>
+									<option>K.S.R.COLLEGE OF ENGINEERING</option>
 									<option>LENDI COLLEGE OF ENGINEERING</option>
+									<option>Madha engineering college</option>
 									<option>Magna College of Engineering</option>
 									<option>Manipal Institute of Technology(MIT), Manipal</option>
 									<option>Meenakshi Sundararajan Engineering College</option>
@@ -227,6 +232,7 @@
 									<option>SOE,CUSAT</option>
 									<option>SONA CLG OF TECH</option>
 									<option>SR engineering college</option>
+									<option>Sree venkateswara college of engineering, nellore</option>
 									<option>SREE VIDYANIKETAN ENGG CLG</option>
 									<option>Sri Krishna college of technology,Coimbatore</option>
 									<option>Sri. Venkateswara College of Engineering</option>

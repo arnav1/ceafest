@@ -1,0 +1,166 @@
+html{
+	
+}
+body{
+	background: #eee;
+	margin: 0px;
+	font-family: century gothic;
+	width: 100%;
+	position: relative;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+#header{
+	margin: -20px 0px 10px;
+	background: #444;
+	color: white;
+	height: 40px;
+	padding: 10px 10px 15px;
+}
+#user_name{
+	float: right;
+	margin-top: 20px;
+}
+#online_quiz{
+	float: left;
+}
+#wrapper{
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+}
+#navs{
+	float: left;
+	margin: -54px 32%;
+}
+.nav{
+	background: #666;
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+	float: left;
+}
+.nav_selected{
+	background: #222;
+	border-bottom: 7px solid #eee;
+}
+.nav a{
+	color: white;
+}
+#article{
+	width: 100%;
+	float: left;
+	margin:10px 30px;
+	font-size:90%;
+}
+.quiz{
+	font-size: 16px;
+	width: 150px;
+	padding: 10px;
+}
+.start_quiz, .quiz_result{
+	background: #444;
+	width: 100px;
+	color: white;
+	padding: 10px 0px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.time_taken{
+	width: 120px;
+}
+#login{
+	width: 500px;
+	margin: 0px auto;
+	text-align: center;
+}
+#login form input{
+	width: 270px;
+	padding: 5px 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid #AAA;
+}
+#submit{
+	background: #444;
+	color: white;
+	cursor: pointer;
+}
+td{
+	text-align:center;
+}
+.quiz_question{
+	height: 350px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.quiz_ops{
+	padding: 5px 20px;
+	font-size: 20px;
+	margin-right: 20px;
+	background: #444;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#questions_container{
+	height: 350px;
+	overflow: hidden;
+}
+#questions{
+	font-size: 20px;
+	margin-top: 0;
+}
+#timer{
+	float: right;
+	margin-top: -40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#nav_overlay{
+	position: absolute;
+	top: -55px;
+	left: -175px;
+	width: 120%;
+	height: 50px;
+	display:none;
+}
+#footer{
+	background: #444;
+	color: white;
+	height: 30px;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	font-size: 12px;
+	width: 100%;
+}
+#footer p{
+	margin-top: 8px;
+}
+#sign_up_form input{
+	/*padding: 10px;*/
+}
+.results{
+	background: #666;
+	color: white;
+	padding: 2px 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#gototop a{
+	position: fixed;
+	bottom: 35px;
+	right: 5px;
+	background: #444;
+	color: white;
+	padding: 5px 20px;
+}
