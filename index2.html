@@ -1,66 +1,178 @@
 <!DOCTYPE html>
+
 <html>
-	
 	<head profile="http://www.w3.org/2005/10/profile">
 		<link rel="icon"
-			type="image/ico"
-			href="img/300_1.ico">
+		type="image/ico"
+		href="img/300_1.ico">
 			
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amaranth">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script> 
-		
-		<meta charset="UTF-8">
-		<title>CEA|Homepage</title>
-		
-		<style>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
 
-			#footer {
-			   position:fixed;
-			   left:0px;
-			   bottom:0px;
-			   height:1000px;
-			   width:100%;
-			   background-color:#000;
+		<meta charset="UTF-8">
+
+		<title>CEA|Homepage</title>		
+
+		<style>
+		
+			#footer {	
+				position:fixed;
+				left:0px;
+				bottom:0px;		
+			    height:50px;
+			    width:100%;
+			    background-color:black;	
 			}
+
+			li {
+				font-weight:bolder;
+				font-size:30px;
+				font-family: 'Amaranth', serif;
+				color: White;  
+				list-style: none;
+				position: absolute;
+				border: 2px solid White;
+               	border-radius: 5px;
+               	cursor: hand;
+            }
             
+			#register {
+                position: fixed;
+				top: 26.28%;
+				left: 63.96%;
+			}
+			
+			#contact{
+                position: fixed;
+				top: 78.2%;
+				left: 41.73%;
+			}
+			
+			#spons{
+                position: fixed;
+				top: 64.52%;
+				left: 21.55%;
+			}
+			
+			#events{
+                position: fixed;
+				top: 26.28%;
+				left: 21.55%;
+			}
+			
+			#hospi{
+                position: fixed;
+				top: 11.66%;
+				left: 41.73%;
+			}
+			
+			#workshops{
+               	position: fixed;
+				top: 64.52%;
+				left: 63.96%;
+			}
+
+			#test {
+			    width:200px;
+			    height:200px;
+			    border:2px solid green;
+			    z-index: 9999;
+			}
+
+			#update {
+				position: fixed;
+				margin-left: 80%;
+				margin-top: 10%;
+				width: 100px;
+				height: 100px;
+			}
+
+			i {
+				color: White;
+			}
+
+			#notifs{
+				font-weight:bolder;
+				font-family: 'Amaranth', serif;
+				font-size: 20px;
+				background-color: black;
+				color:white;
+				width: 100%;
+				display:block;
+				border-radius: 10px;
+				height:30px;
+			}
+		
 		</style>
+		
 		<script type="text/javascript">
-			$('document').ready(function() {
-				var options = { videoId: 'da5PlgDFV5k', start: 5 };
+	
+			$('document').ready(function() {		
+				var options = { videoId: 'da5PlgDFV5k', start: 5 };		
 				$('#wrapper').tubular(options);
 			});
+
+			$(document).ready(function () {
+			    $('#update').hide().before('<a href="#" id="toggle-menu" class="menu"><i class="fa fa-bell fa-5x"></i></a>');
+
+			    $('a#toggle-menu').click(function (e) {
+			        e.preventDefault();
+			        $('#update').slideToggle(200);
+			    });
+
+			    $(document).click(function (e) {
+			        if ($(e.target).closest('#update').length > 0 || $(e.target).closest('#toggle-menu').length > 0) return;
+			        $('#update').slideUp(200);
+			    });
+			});
+
 		</script>
-</head>
+	</head>
 
-<body>
-
-	<div id="wrapper">
-		<img src="img/300.png" alt="CEA" style="width: 100px; height: 100px; ">
-  	
-	  <div id="footer">
-	  	<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png"></a>
-		<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png"></a>
-		<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png"></a>
-	  </div>
-	 	
+	<body>
 	
-	</div>
+		<div id="wrapper">
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			<!--<div id="update"></div>-->
+			<div id="notifs">
+				<marquee behavior="alternate">Concrete Challenge Problem Statement Updated || Geo-genius and Master Builder Problem Statements Uploaded</marquee>
+			</div>
 
-	  ga('create', 'UA-59208647-1', 'auto');
-	  ga('send', 'pageview');
+			<img src="img/300.png" alt="CEA" style="width: 100px; height: 100px; ">
 
-	</script>
+			<ul>
+			    <a href="event.html"><li id="events">EVENTS</li></a>
+			    <a href="contact.html"><li id="contact">CONTACT US</li></a>
+			    <a href="Sponspage.html"><li id="spons">SPONSORS</li></a>
+			    <a href="register.php"><li id="register">REGISTRATION</li></a>
+			    <a href="hospi.html"><li id="hospi">HOSPITALITY</li></a>
+			    <a href="workshop.html"><li id="workshops">WORKSHOPS</li></a>
+		    </ul>
+	  	
+	  		<div id="footer">
+				<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png"></a>
+				<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png"></a>
+				<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png"></a>	 
+			</div>
 
-</body> 
+		</div>
+
+		<script>
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })
+			(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-59208647-1', 'auto');		 
+			ga('send', 'pageview');
+
+		</script>
+
+	</body>
 
 </html>
