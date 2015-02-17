@@ -133,11 +133,18 @@
 								<input type="text" class="form-control" placeholder="+919999999999" name="number" value="<?php echo $number;?>"/><span class="error"><?php echo $numberErr;?></span>
 							</div>
 						</div>
-						
+
 						<div class="form-group">
+							<label for="college" class="col-sm-2 control-label">College:<span class="error">*</span></label>
+							<div class="col-sm-6 input-append">
+								<input type="text" class="form-control" placeholder="Enter name of college" name="college" value="<?php echo $college;?>"/> <span class="error"><?php echo $collegeErr;?></span>
+							</div>
+						</div>
+						
+						<!--<div class="form-group">
 							<label for="college" class="col-sm-2 control-label">Select your college:<span class="error">*</span></label>
 							<div class="col-sm-6">
-								<select class="form-control" name="college" value="<?php echo $college;?>">
+								<select class="form-control" name="college" value="<?php # echo $college;?>">
 									<option>A C CLG OF ENGG AND TECH</option>
 									<option>Aalim Muhammed Salegh College of Engineering</option>
 									<option>Acharya Nagarjuna University College of Engg. & Tech.</option>
@@ -254,10 +261,10 @@
 									<option>Vizag Institute of Technology</option>
 									<option>VNR</option>
 									<option>VR Siddhartha Engineering College</option>
-								</select><span class="error"><?php echo $collegeErr;?></span>
+								</select><span class="error"><?php # echo $collegeErr;?></span>
 								<span class="help-text">Your college not on the list? Send us an email at cea15reg@gmail.com</span>
 							</div>
-						</div>
+						</div>-->
 						
 						<div class="form-group">
 							<label for="accommodation" class="col-sm-2 control-label">Accommodation Needed?<span class="error">*</span></label>

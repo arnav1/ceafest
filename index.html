@@ -1,209 +1,101 @@
 <!DOCTYPE html>
+
 <html>
-	
 	<head profile="http://www.w3.org/2005/10/profile">
 		<link rel="icon"
-			type="image/ico"
-			href="img/300_1.ico">
+		type="image/ico"
+		href="img/300_1.ico">
 			
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amaranth">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		
+		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+
 		<meta charset="UTF-8">
-		<title>CEA|Homepage</title>
-		
+
+		<title>CEA|Homepage</title>		
+
 		<style>
 		
-	/*		body{
-				position:relative;
-				background-image: url("./green.jpg");
-				-webkit-background-size: cover;
- 				-moz-background-size: cover;
- 				-o-background-size: cover;
-				background-size: 100%;
-				background-repeat: no-repeat;
+			#footer {	
+				position:fixed;
+				left:0px;
+				bottom:0px;		
+			    height:50px;
+			    width:100%;
+			    background-color:black;	
 			}
-	*/		
-			
-/*			#E1 {
-				position:absolute;
-				top:248px;
-				left:628px;
-				width:125px;
-				height:19px;
-				-ms-transform: skew(60deg,150deg);
-				-webkit-transform: skew(60deg,150deg);
-				-moz-transform: skew(60deg,150deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			
-			#E2 {
-				position:absolute;
-				top:224px;
-				left:584px;
-				width:125px;
-				height:19px;
-				-ms-transform: skew(60deg,150deg);
-				-webkit-transform: skew(60deg,150deg);
-				-moz-transform: skew(60deg,150deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			
-			#E3 {
-				position:absolute;
-				top:200px;
-				left:541px;
-				width:124px;
-				height:18px;
-				-ms-transform: skew(60deg,150deg);
-				-webkit-transform: skew(60deg,150deg);
-				-moz-transform: skew(60deg,150deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			
-			#A1 {
-				position:absolute;
-				top: 310px;
-				left: 650px;
-				width: 33px;
-				height: 120px;
-				-ms-transform: skew(0,-30deg);
-				-webkit-transform: skew(0,-30deg);
-				-moz-transform: skew(0,-30deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			#A2 {
-				position: absolute;
-				top: 280px;
-				left: 650px;
-				width: 117px;
-				height: 36px;
-				-ms-transform: skew(0,-30deg);
-				-webkit-transform: skew(0,-30deg);
-				-moz-transform: skew(0,-30deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			#A3 {
-				position: absolute;
-				top: 280px;
-				left: 734px;
-				width: 33px;
-				height: 110px;
-				-ms-transform: skew(0,-30deg);
-				-webkit-transform: skew(0,-30deg);
-				-moz-transform: skew(0,-30deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			#C{
-				position:absolute;
-				top: 1px;
-				left: -3px;
-			}
-			#C1 {
-				position: absolute;
-				top: 281px;
-				left: 537px;
-				width: 100px;
-				height: 36px;
-				-ms-transform: skew(0,30deg);
-				-webkit-transform: skew(0,30deg);
-				-moz-transform: skew(0,30deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			#C2 {
-				position: absolute;
-				top: 258px;
-				left: 532px;
-				width: 30px;
-				height: 110px;
-				-ms-transform: skew(0,30deg);
-				-webkit-transform: skew(0,30deg);
-				-moz-transform: skew(0,30deg);
-				background: brown;
-				border-radius: 5px;
-			}
-			#C3 {
-				position: absolute;
-				top: 371px;
-				left: 532px;
-				width: 105px;
-				height: 36px;
-				-ms-transform: skew(0,30deg);
-				-webkit-transform: skew(0,30deg);
-				-moz-transform: skew(0,30deg);
-				background: brown;
-				border-radius: 5px;
-			}   */
+
 			li {
 				font-weight:bolder;
 				font-size:30px;
 				font-family: 'Amaranth', serif;
-				color: Black;  
+				color: White;  
 				list-style: none;
 				position: absolute;
-            }   
-            
-			li:hover {
-				font-weight:bolder;
-				font-size:30px;
-				font-family: 'Amaranth', serif;
-				color: #781E18;  
-				list-style: none;
-				position: absolute;
-              		 	cursor: pointer;
-                		cursor: hand; 
-                		list-style-position:inside;
-                		border: 2px solid #781E18;
-               			 border-radius: 5px;              
-			}
-			
+				border: 2px solid White;
+               	border-radius: 5px;
+               	cursor: hand;
+            }
             
 			#register {
-                		position: fixed;
+                position: fixed;
 				top: 26.28%;
 				left: 63.96%;
 			}
 			
 			#contact{
-                		position: fixed;
+                position: fixed;
 				top: 78.2%;
 				left: 41.73%;
 			}
 			
 			#spons{
-                		position: fixed;
+                position: fixed;
 				top: 64.52%;
 				left: 21.55%;
 			}
 			
 			#events{
-                		position: fixed;
+                position: fixed;
 				top: 26.28%;
 				left: 21.55%;
 			}
 			
 			#hospi{
-                		position: fixed;
+                position: fixed;
 				top: 11.66%;
 				left: 41.73%;
 			}
 			
 			#workshops{
-               			 position: fixed;
+               	position: fixed;
 				top: 64.52%;
 				left: 63.96%;
 			}
-			
+
+			#test {
+			    width:200px;
+			    height:200px;
+			    border:2px solid green;
+			    z-index: 9999;
+			}
+
+			#update {
+				position: fixed;
+				margin-left: 80%;
+				margin-top: 10%;
+				width: 100px;
+				height: 100px;
+			}
+
+			i {
+				color: White;
+			}
+
 			#notifs{
 				font-weight:bolder;
 				font-family: 'Amaranth', serif;
@@ -215,162 +107,72 @@
 				border-radius: 10px;
 				height:30px;
 			}
-            
-            #logo{
-                position: fixed;
-                top:20%;
-                left:36.5%;
-                height:59%;
-                width:25.2%;
-            }
-            
-                        
-            #fb{
-                position: fixed;
-                top: 92%;
-                left: 3%;
-                height: 35px;
-                }
-            
-            #yt{
-                position: fixed;
-                top: 92%;
-                left: 5%;
-                height: 35px;
-            }
-            
-             #cea{
-                position: fixed;
-                top: 92%;
-                left: 7%;
-                height: 35px;
-            }
-
-           video#bgVideo {
-position: fixed;
-right: 0;
-bottom: 0;
-width: auto;
-min-width: 100%;
-height: auto;
-min-height: 100%;
-z-index: -100;    
-background-size: cover;
-}
-
-            
+		
 		</style>
-</head>
-
-<body>
-	<!--<div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%'>
-		<img src='green.jpg' style='width:100%;height:100%' alt='[]' />
-		</div>-->
-		 <video id="bgVideo" controls preload="true" autoplay loop muted>
-      <source src="video.mp4" type="video/mp4" >
-
-   </video>
-
-  <div id="notifs"><marquee behavior="alternate">Registrations are open! CEAFest from 13-15 March, 2015</div></marquee>
-    <img src="img/300.png" id="logo">
- <!--   <div id="E">
-        <div id="E1">
-        </div>
-        <div id="E2">
-        </div>
-        <div id="E3">
-        </div> 
-    </div>
-    <div id="A">
-        <div id="A1">
-        </div>
-        <div id="A2">
-        </div>
-        <div id="A3">
-        </div>
-    </div>
-    <div id="C">
-        <div id="C1">
-        </div>
-        <div id="C2">
-        </div>
-        <div id="C3">
-        </div>
-    </div>  -->
+		
+		<script type="text/javascript">
 	
-<!--	<canvas id="myCanvas" width="1366" height="720">
-    </canvas>
--->
-    <ul>
-    <a href="event.html"><li id="events">EVENTS</li></a>
-    <a href="contact.html"><li id="contact">CONTACT US</li></a>
-    <a href="Sponspage.html"><li id="spons">SPONSORS</li></a>
-    <a href="register.php"><li id="register">REGISTRATION</li></a>
-    <a href="hospi.html"><li id="hospi">HOSPITALITY</li></a>
-    <a href="workshop.html"><li id="workshops">WORKSHOPS</li></a>
-    </ul>
-    
- <!--   <p style="font-family:Amaranth;text-align:center;position:absolute;top:575px;left:560px;cursor:pointer;cursor:hand;text-decoration:underline;font-size:20px;" onclick="start()">Click to build CEA Logo!</p> -->
- 	<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png" id="fb"></a>
-	<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png" id="yt"></a>
-	<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png" id="cea"></a>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			$('document').ready(function() {		
+				var options = { videoId: 'da5PlgDFV5k', start: 5 };		
+				$('#wrapper').tubular(options);
+			});
 
-  ga('create', 'UA-59208647-1', 'auto');
-  ga('send', 'pageview');
+			$(document).ready(function () {
+			    $('#update').hide().before('<a href="#" id="toggle-menu" class="menu"><i class="fa fa-bell fa-5x"></i></a>');
 
-</script>
-</body>
-    <script>                                                 // For creating circle
-            var c=document.getElementById("myCanvas");
-            var ctx=c.getContext("2d");
-            ctx.beginPath();
-            ctx.arc(645,300,175,0,2*Math.PI);
-            ctx.lineWidth = 2;
-			ctx.strokeStyle = '#781E18';
-			ctx.stroke();
-        
-    </script>    
+			    $('a#toggle-menu').click(function (e) {
+			        e.preventDefault();
+			        $('#update').slideToggle(200);
+			    });
 
-   <!-- <script>                                                    //Display and animate Logo
-            
-        function start() {
-            document.getElementById("A3").style.visibility='hidden';
-            document.getElementById("C2").style.visibility='hidden';
-            document.getElementById("A2").style.visibility='hidden';
-            document.getElementById("A1").style.visibility='hidden';
-            document.getElementById("C3").style.visibility='hidden';
-            document.getElementById("C1").style.visibility='hidden';
-            document.getElementById("E1").style.visibility='hidden';
-            document.getElementById("E2").style.visibility='hidden';
-            document.getElementById("E3").style.visibility='hidden';    
-            setTimeout(floor,500);
-            }
-        function floor()
-            {
-                document.getElementById("C3").style.visibility='visible';
-                setTimeout(columns,1000);
-            }
-        function columns() {
-                document.getElementById("C2").style.visibility='visible';
-                document.getElementById("A1").style.visibility='visible';
-                document.getElementById("A3").style.visibility='visible';
-                setTimeout(beams,1000);
-            }
-        function beams() {
-                document.getElementById("C1").style.visibility='visible';
-                document.getElementById("A2").style.visibility='visible';
-                setTimeout(roofs,1000);
-            }
-        function roofs() {
-                document.getElementById("E1").style.visibility='visible';
-                document.getElementById("E2").style.visibility='visible';
-                document.getElementById("E3").style.visibility='visible';
-                }
-            
-    </script> -->
+			    $(document).click(function (e) {
+			        if ($(e.target).closest('#update').length > 0 || $(e.target).closest('#toggle-menu').length > 0) return;
+			        $('#update').slideUp(200);
+			    });
+			});
+
+		</script>
+	</head>
+
+	<body>
+	
+		<div id="wrapper">
+
+			<!--<div id="update"></div>-->
+			<div id="notifs">
+				<marquee behavior="alternate">Concrete Challenge Problem Statement Updated || Geo-genius and Master Builder Problem Statements Uploaded</marquee>
+			</div>
+
+			<img src="img/300.png" alt="CEA" style="width: 100px; height: 100px; ">
+
+			<ul>
+			    <a href="event.html"><li id="events">EVENTS</li></a>
+			    <a href="contact.html"><li id="contact">CONTACT US</li></a>
+			    <a href="Sponspage.html"><li id="spons">SPONSORS</li></a>
+			    <a href="register.php"><li id="register">REGISTRATION</li></a>
+			    <a href="hospi.html"><li id="hospi">HOSPITALITY</li></a>
+			    <a href="workshop.html"><li id="workshops">WORKSHOPS</li></a>
+		    </ul>
+	  	
+	  		<div id="footer">
+				<a href="https://www.facebook.com/ceaiitm"><img src="dark/appbar.social.facebook.png"></a>
+				<a href="https://www.youtube.com/channel/UCB6WxnHloUrulRgfWoXYYIA"><img src="dark/appbar.youtube.png"></a>
+				<a href="http://www.ceaiitm.org/cea"><img src="dark/appbar.social.wordpress.png"></a>	 
+			</div>
+
+		</div>
+
+		<script>
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })
+			(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-59208647-1', 'auto');		 
+			ga('send', 'pageview');
+
+		</script>
+
+	</body>
+
 </html>
